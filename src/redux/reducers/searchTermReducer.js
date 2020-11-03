@@ -1,6 +1,6 @@
 import { ADD_SEARCH_TERM } from "../actions/actionType"
 
-  const searchReducer = (state=[], action) => {
+  const searchTermReducer = (state=[], action) => {
     switch(action.type) {
       case ADD_SEARCH_TERM:
         return [...state, action.payload]
@@ -9,4 +9,4 @@ import { ADD_SEARCH_TERM } from "../actions/actionType"
     }
   }
 
-  export default searchReducer
+export default searchTermReducer
