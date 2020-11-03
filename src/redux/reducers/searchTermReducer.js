@@ -1,4 +1,4 @@
-import { ADD_SEARCH_TERM } from "../actions/actionType"
+import { ADD_SEARCH_TERM } from '../actions/actionType'
 
   const searchTermReducer = (state=[], action) => {
     switch(action.type) {

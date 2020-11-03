@@ -1,10 +1,10 @@
 import { ADD_SEARCH_TERM, SET_SEARCH_RESULTS, CLEAR_SEARCH_RESULTS } from './actionType';
 
-function addSearchTerm(data) { return { type: ADD_SEARCH_TERM, payload: data } }
-
 function setSearchResults(data) { return { type: SET_SEARCH_RESULTS, payload: data } }
 
 function clearSearchResults() { return { type: CLEAR_SEARCH_RESULTS } }
+
+function addSearchTerm(data) { return { type: ADD_SEARCH_TERM, payload: data } }
 
 function fetchSearchResults(searchTerm) {
   const searchUrl = "http://hn.algolia.com/api/v1/search?query="

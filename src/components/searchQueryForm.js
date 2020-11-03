@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import {addSearchTerm, fetchSearchResults} from "../redux/actions/actionCreators";
-
+import { addSearchTerm, fetchSearchResults } from '../redux/actions/actionCreators';
 
 const SearchQueryForm = ({ addSearchTerm, fetchSearchResults }) => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -25,11 +24,6 @@ const SearchQueryForm = ({ addSearchTerm, fetchSearchResults }) => {
                value="Submit"
         />
       </form>
-      {/*<ul>*/}
-      {/*  <>{searchData.map(entry => {*/}
-      {/*    return <li>{entry.title}</li>*/}
-      {/*  })}</>*/}
-      {/*</ul>*/}
     </React.Fragment>
   );
 }
@@ -40,6 +34,5 @@ const mapDispatchToProps = dispatch => {
     fetchSearchResults: results => dispatch(fetchSearchResults(results))
   }
 }
-
 
 export default connect(null, mapDispatchToProps)(SearchQueryForm)

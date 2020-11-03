@@ -1,4 +1,4 @@
-import { CLEAR_SEARCH_RESULTS, SET_SEARCH_RESULTS } from "../actions/actionType"
+import { CLEAR_SEARCH_RESULTS, SET_SEARCH_RESULTS } from '../actions/actionType'
 
 const searchResultsReducer = (state=[], action) => {
   switch(action.type) {
