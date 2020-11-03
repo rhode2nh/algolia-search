@@ -1,0 +1,3 @@
+const ADD_SEARCH_TERM  = 'ADD_SEARCH_TERM'
+
+export { ADD_SEARCH_TERM }
